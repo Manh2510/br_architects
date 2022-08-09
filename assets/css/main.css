@@ -121,7 +121,7 @@ h3 {
 }
 .project__img {
     padding: 8px 8px 2px;
-    width: 25%;
+    flex: 25%;
     position: relative;
 }
 .project__img .img-des {
@@ -144,11 +144,11 @@ h3 {
     margin-top: 32px;
     width: 100%;
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 .member__company {
-    width: 25%;
-    margin: 0 8px;
+    flex: 25%;
+    padding: 0 8px;
     font-size: 15px;
 }
 .member__company img {
@@ -226,14 +226,13 @@ h3 {
 /* Tablet and low pc */
 @media screen and (min-width: 740px) and (max-width:1023px) {
     .project__img {
-        width: 50%;
+        flex: 50%;
     }
     .content__introduce {
         flex-wrap: wrap;
     }
     .member__company {
-        width: 50%;
-        margin: 0;
+        flex: 50%;
         padding: 8px 8px 20px;
     }
 }
@@ -250,14 +249,10 @@ h3 {
         display: none;
     }
     .project__img {
-        width: 100%;
-    }
-    .content__introduce {
-        flex-wrap: wrap;
+        flex: 100%;
     }
     .member__company {
-        width: 100%;
-        margin: 0;
+        flex: 100%;
         padding: 8px 8px 20px;
     }
 }
